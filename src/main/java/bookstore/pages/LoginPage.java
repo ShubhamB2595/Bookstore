@@ -14,11 +14,11 @@ public class LoginPage {
 	private String USER_ACC_URL = "https://www.bookswagon.com/myaccount.aspx";
 	private String AFTER_LOGIN_TITLE = "Online BookStore India, Buy Books Online, Buy Book Online India - Bookswagon.com";
 	// Initialization of Web elements
-	@FindBy(xpath = "//body[1]/form[1]/div[4]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/div[2]/input[1]")
+	@FindBy(xpath = "//input[@id='ctl00_phBody_SignIn_txtEmail']")
 	WebElement EMAIL_TXT;
-	@FindBy(xpath = "//body[1]/form[1]/div[4]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[3]/div[2]/input[1]")
+	@FindBy(xpath = "//input[@id='ctl00_phBody_SignIn_txtPassword']")
 	WebElement PASSWORD_TXT;
-	@FindBy(xpath = "//body[1]/form[1]/div[4]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[5]/input[1]")
+	@FindBy(xpath = "//input[@id='ctl00_phBody_SignIn_btnLogin']")
 	WebElement LOGIN_BTN;
 	@FindBy(xpath = "//a[contains(text(),'Forgot Password ?')]")
 	WebElement FORGOT_PASS;

@@ -24,6 +24,7 @@ public class Bookstore {
 		System.out.println(homepage.getSEARCH_RESULT_URL());
 		System.out.println(driver.getCurrentUrl());
 		driver.close();
+		
 	}
 	
 	public static void driverSetup() {
