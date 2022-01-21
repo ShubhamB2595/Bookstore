@@ -5,9 +5,9 @@
     <classes>
       <class name="bookstore.BookstoreTest">
         <methods>
-          <include name="loginWithInValidCreadentials"/>
           <include name="testSetup"/>
           <include name="tearDown"/>
+          <include name="removeTotalCartItems"/>
         </methods>
       </class> <!-- bookstore.BookstoreTest -->
     </classes>

@@ -1,5 +1,8 @@
 package bookstore.pages;
 
+import java.util.List;
+
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -41,8 +44,8 @@ public class HomePage {
 	WebElement BOOKS;
 	@FindBy(xpath = "//img[@id=\"ctl00_imglogo\"]")
 	WebElement BOOKS_WAGON_LOGO;
-	@FindBy(xpath = "")
-	WebElement a;
+	@FindBy(xpath = "//div[@class='cover']")
+	List<WebElement> SEARCH_LIST;
 	@FindBy(xpath = "")
 	WebElement e;
 
@@ -54,62 +57,68 @@ public class HomePage {
 	}
 
 	// for lunching home page
-	public void launchingWebpage() {
+	public void launchingHomepage() {
 		driver.get(HOMEPAGE_URL);
 	}
 
 	// method for searching books
 	public void searchProduct(String bookName) {
 		setSEARCH_RESULT_URL(SEARCH_BOOK_URL + bookName);
-		launchingWebpage();
+		launchingHomepage();
 		SEARCH_TXT.sendKeys(bookName);
 		SEARCH_BTN.click();
+	}
+	
+	public void searchAndSelectProduct(String pName, int pIndex) {
+		SEARCH_TXT.sendKeys(pName);
+		SEARCH_BTN.click();
+		SEARCH_LIST.get(pIndex).click();
+	}
+
+	public void checkProduct(String product) {
+		SEARCH_TXT.sendKeys(product);
+		SEARCH_BTN.click();
+		driver.findElement(By.xpath("//a[contains(text(),'" + product + "')]")).click();
 	}
 
 	// method for verifying logo
 	public boolean logoIsDisplayed() {
-		launchingWebpage();
+		launchingHomepage();
 		return BOOKS_WAGON_LOGO.isDisplayed();
 	}
 
 	// for verifying new arrivals page
 	public String verifyNewArrivals() {
-		launchingWebpage();
 		NEW_ARRIVALS.click();
 		return driver.getCurrentUrl();
 	}
 
 	// for verifying pre order page
 	public String verifyPreOrder() {
-		launchingWebpage();
 		PRE_ORDER.click();
 		return driver.getCurrentUrl();
 	}
 
 	// for verifying best seller page
 	public String verifyBestSeller() {
-		launchingWebpage();
 		BEST_SELLERS.click();
 		return driver.getCurrentUrl();
 	}
 
 	// for verifying text book page
 	public String verifyTextBooks() {
-		launchingWebpage();
 		TEXT_BOOKS.click();
 		return driver.getCurrentUrl();
 	}
 
 	// for verifying award winner page
 	public String verifyAwardWinner() {
-		launchingWebpage();
 		AWARD_WINNERS.click();
 		return driver.getCurrentUrl();
 	}
 
 	// for verifying feature author page
 	public String verifyFeatureAuthor() {
-		launchingWebpage();
 		AUTHORS.click();
 		return driver.getCurrentUrl();
 	}
