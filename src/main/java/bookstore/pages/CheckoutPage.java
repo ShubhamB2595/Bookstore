@@ -6,11 +6,14 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
 
+import bookstore.utilities.ExcelLibrary;
+
 public class CheckoutPage {
 
 	// Initialization of Web driver
 	WebDriver driver;
 
+	ExcelLibrary excelLibrary = new ExcelLibrary();
 	Select select;
 
 	// storing URL's from checkout page
@@ -58,16 +61,16 @@ public class CheckoutPage {
 	}
 
 	public void enterShippingAddress() {
-		RNAME.sendKeys("Shubham Bhele");
-		ADDRESS.sendKeys("ASHOK PARK, PUSAD");
+		RNAME.sendKeys(excelLibrary.getCellData("AddressData", 0, 2));
+		ADDRESS.sendKeys(excelLibrary.getCellData("AddressData", 1, 2));
 		select = new Select(COUNTRY);
-		select.selectByVisibleText("India");
+		select.selectByVisibleText(excelLibrary.getCellData("AddressData", 2, 2));
 		select = new Select(STATE);
-		select.selectByVisibleText("Maharashtra");
+		select.selectByVisibleText(excelLibrary.getCellData("AddressData", 3, 2));
 		select = new Select(CITY);
-		select.selectByVisibleText("Pune");
-		PINCODE.sendKeys("411028");
-		MOBILE.sendKeys("0987654321");
+		select.selectByVisibleText(excelLibrary.getCellData("AddressData", 4, 2));
+		PINCODE.sendKeys(excelLibrary.getCellData("AddressData", 5, 2));
+		MOBILE.sendKeys(excelLibrary.getCellData("AddressData", 6, 2));
 
 	}
 

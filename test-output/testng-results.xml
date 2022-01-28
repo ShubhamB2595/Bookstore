@@ -1,145 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="31" passed="31" failed="0" skipped="0">
+<testng-results ignored="28" total="29" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-01-21T15:30:14 IST" name="Default suite" finished-at="2022-01-21T15:33:37 IST" duration-ms="202503">
+  <suite started-at="2022-01-28T13:55:17 IST" name="Default suite" finished-at="2022-01-28T13:55:42 IST" duration-ms="24590">
     <groups>
     </groups>
-    <test started-at="2022-01-21T15:30:14 IST" name="Default test" finished-at="2022-01-21T15:33:37 IST" duration-ms="202503">
-      <class name="bookstore.BookstoreTest">
-        <test-method is-config="true" signature="testSetup()[pri:0, instance:bookstore.BookstoreTest@13e344d]" started-at="2022-01-21T15:30:14 IST" name="testSetup" finished-at="2022-01-21T15:30:36 IST" duration-ms="22145" status="PASS">
+    <test started-at="2022-01-28T13:55:17 IST" name="Default test" finished-at="2022-01-28T13:55:42 IST" duration-ms="24590">
+      <class name="bookstore.BookstorePosTest">
+        <test-method is-config="true" signature="testSetup()[pri:0, instance:bookstore.BookstorePosTest@72e5a8e]" started-at="2022-01-28T13:55:17 IST" name="testSetup" finished-at="2022-01-28T13:55:24 IST" duration-ms="6985" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testSetup -->
-        <test-method signature="loginWithInValidCreadentials()[pri:0, instance:bookstore.BookstoreTest@13e344d]" started-at="2022-01-21T15:30:36 IST" name="loginWithInValidCreadentials" finished-at="2022-01-21T15:30:47 IST" duration-ms="10883" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginWithInValidCreadentials -->
-        <test-method signature="verifyForgotPasswordPage()[pri:1, instance:bookstore.BookstoreTest@13e344d]" started-at="2022-01-21T15:30:47 IST" name="verifyForgotPasswordPage" finished-at="2022-01-21T15:30:50 IST" duration-ms="2896" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyForgotPasswordPage -->
-        <test-method signature="verifyForgotPasswordWithValidEmail()[pri:2, instance:bookstore.BookstoreTest@13e344d]" started-at="2022-01-21T15:30:50 IST" name="verifyForgotPasswordWithValidEmail" finished-at="2022-01-21T15:30:55 IST" duration-ms="5411" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyForgotPasswordWithValidEmail -->
-        <test-method signature="verifyForgotPasswordWithInValidEmail()[pri:3, instance:bookstore.BookstoreTest@13e344d]" started-at="2022-01-21T15:30:55 IST" name="verifyForgotPasswordWithInValidEmail" finished-at="2022-01-21T15:30:59 IST" duration-ms="3892" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyForgotPasswordWithInValidEmail -->
-        <test-method signature="loginWithValidCreadentials()[pri:4, instance:bookstore.BookstoreTest@13e344d]" started-at="2022-01-21T15:30:59 IST" name="loginWithValidCreadentials" finished-at="2022-01-21T15:31:04 IST" duration-ms="4722" status="PASS">
+        <test-method signature="loginWithValidCreadentials()[pri:2, instance:bookstore.BookstorePosTest@72e5a8e]" started-at="2022-01-28T13:55:24 IST" name="loginWithValidCreadentials" finished-at="2022-01-28T13:55:32 IST" duration-ms="7514" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginWithValidCreadentials -->
-        <test-method signature="verifyLoginStatus()[pri:5, instance:bookstore.BookstoreTest@13e344d]" started-at="2022-01-21T15:31:04 IST" name="verifyLoginStatus" finished-at="2022-01-21T15:31:06 IST" duration-ms="1709" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyLoginStatus -->
-        <test-method signature="verifyPersonalSettingPage()[pri:6, instance:bookstore.BookstoreTest@13e344d]" started-at="2022-01-21T15:31:06 IST" name="verifyPersonalSettingPage" finished-at="2022-01-21T15:31:08 IST" duration-ms="2626" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyPersonalSettingPage -->
-        <test-method signature="verifyMyOrdersPage()[pri:7, instance:bookstore.BookstoreTest@13e344d]" started-at="2022-01-21T15:31:08 IST" name="verifyMyOrdersPage" finished-at="2022-01-21T15:31:10 IST" duration-ms="1434" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyMyOrdersPage -->
-        <test-method signature="verifyMyWishlistPage()[pri:8, instance:bookstore.BookstoreTest@13e344d]" started-at="2022-01-21T15:31:10 IST" name="verifyMyWishlistPage" finished-at="2022-01-21T15:31:11 IST" duration-ms="1563" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyMyWishlistPage -->
-        <test-method signature="verifyMyGiftPage()[pri:9, instance:bookstore.BookstoreTest@13e344d]" started-at="2022-01-21T15:31:11 IST" name="verifyMyGiftPage" finished-at="2022-01-21T15:31:13 IST" duration-ms="1359" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyMyGiftPage -->
-        <test-method signature="verifyMyAddressPage()[pri:10, instance:bookstore.BookstoreTest@13e344d]" started-at="2022-01-21T15:31:13 IST" name="verifyMyAddressPage" finished-at="2022-01-21T15:31:14 IST" duration-ms="1279" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyMyAddressPage -->
-        <test-method signature="verifyChangePasswordPage()[pri:11, instance:bookstore.BookstoreTest@13e344d]" started-at="2022-01-21T15:31:14 IST" name="verifyChangePasswordPage" finished-at="2022-01-21T15:31:16 IST" duration-ms="1814" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyChangePasswordPage -->
-        <test-method signature="verifyLogoIsDisplayed()[pri:12, instance:bookstore.BookstoreTest@13e344d]" started-at="2022-01-21T15:31:16 IST" name="verifyLogoIsDisplayed" finished-at="2022-01-21T15:31:24 IST" duration-ms="7608" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyLogoIsDisplayed -->
-        <test-method signature="verifyNewArriavalPage()[pri:13, instance:bookstore.BookstoreTest@13e344d]" started-at="2022-01-21T15:31:24 IST" name="verifyNewArriavalPage" finished-at="2022-01-21T15:31:26 IST" duration-ms="2625" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyNewArriavalPage -->
-        <test-method signature="verifyPreOrderPage()[pri:14, instance:bookstore.BookstoreTest@13e344d]" started-at="2022-01-21T15:31:26 IST" name="verifyPreOrderPage" finished-at="2022-01-21T15:31:29 IST" duration-ms="2809" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyPreOrderPage -->
-        <test-method signature="verifyBestSellerPage()[pri:15, instance:bookstore.BookstoreTest@13e344d]" started-at="2022-01-21T15:31:29 IST" name="verifyBestSellerPage" finished-at="2022-01-21T15:31:33 IST" duration-ms="3529" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyBestSellerPage -->
-        <test-method signature="verifyTextBookPage()[pri:16, instance:bookstore.BookstoreTest@13e344d]" started-at="2022-01-21T15:31:33 IST" name="verifyTextBookPage" finished-at="2022-01-21T15:31:34 IST" duration-ms="1978" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyTextBookPage -->
-        <test-method signature="verifyAwardWinnerPage()[pri:17, instance:bookstore.BookstoreTest@13e344d]" started-at="2022-01-21T15:31:34 IST" name="verifyAwardWinnerPage" finished-at="2022-01-21T15:31:36 IST" duration-ms="1818" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyAwardWinnerPage -->
-        <test-method signature="verifyFeatureAuthorPage()[pri:18, instance:bookstore.BookstoreTest@13e344d]" started-at="2022-01-21T15:31:36 IST" name="verifyFeatureAuthorPage" finished-at="2022-01-21T15:31:38 IST" duration-ms="1676" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyFeatureAuthorPage -->
-        <test-method signature="searchingBooks()[pri:19, instance:bookstore.BookstoreTest@13e344d]" started-at="2022-01-21T15:31:38 IST" name="searchingBooks" finished-at="2022-01-21T15:31:44 IST" duration-ms="5640" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- searchingBooks -->
-        <test-method signature="addCart()[pri:20, instance:bookstore.BookstoreTest@13e344d]" started-at="2022-01-21T15:31:44 IST" name="addCart" finished-at="2022-01-21T15:31:55 IST" duration-ms="11076" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- addCart -->
-        <test-method signature="searchProductAndAddItToCart()[pri:21, instance:bookstore.BookstoreTest@13e344d]" started-at="2022-01-21T15:31:55 IST" name="searchProductAndAddItToCart" finished-at="2022-01-21T15:32:07 IST" duration-ms="12616" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- searchProductAndAddItToCart -->
-        <test-method signature="verifyMyCartIsOpen()[pri:22, instance:bookstore.BookstoreTest@13e344d]" started-at="2022-01-21T15:32:07 IST" name="verifyMyCartIsOpen" finished-at="2022-01-21T15:32:09 IST" duration-ms="1238" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyMyCartIsOpen -->
-        <test-method signature="removeFirstItemFromCart()[pri:23, instance:bookstore.BookstoreTest@13e344d]" started-at="2022-01-21T15:32:09 IST" name="removeFirstItemFromCart" finished-at="2022-01-21T15:32:11 IST" duration-ms="2196" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- removeFirstItemFromCart -->
-        <test-method signature="removeTotalCartItems()[pri:24, instance:bookstore.BookstoreTest@13e344d]" started-at="2022-01-21T15:32:11 IST" name="removeTotalCartItems" finished-at="2022-01-21T15:32:43 IST" duration-ms="32365" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- removeTotalCartItems -->
-        <test-method signature="searchAllResult()[pri:25, instance:bookstore.BookstoreTest@13e344d]" started-at="2022-01-21T15:32:43 IST" name="searchAllResult" finished-at="2022-01-21T15:32:53 IST" duration-ms="10329" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- searchAllResult -->
-        <test-method signature="changeBuyingQuantity()[pri:26, instance:bookstore.BookstoreTest@13e344d]" started-at="2022-01-21T15:32:53 IST" name="changeBuyingQuantity" finished-at="2022-01-21T15:32:55 IST" duration-ms="1175" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- changeBuyingQuantity -->
-        <test-method signature="toggleCurrency()[pri:27, instance:bookstore.BookstoreTest@13e344d]" started-at="2022-01-21T15:32:55 IST" name="toggleCurrency" finished-at="2022-01-21T15:33:00 IST" duration-ms="5584" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- toggleCurrency -->
-        <test-method signature="CheckingPlacingOrder()[pri:28, instance:bookstore.BookstoreTest@13e344d]" started-at="2022-01-21T15:33:00 IST" name="CheckingPlacingOrder" finished-at="2022-01-21T15:33:05 IST" duration-ms="4424" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- CheckingPlacingOrder -->
-        <test-method signature="continueForPlacingOrder()[pri:29, instance:bookstore.BookstoreTest@13e344d]" started-at="2022-01-21T15:33:05 IST" name="continueForPlacingOrder" finished-at="2022-01-21T15:33:18 IST" duration-ms="13152" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- continueForPlacingOrder -->
-        <test-method signature="userLogoutAction()[pri:30, instance:bookstore.BookstoreTest@13e344d]" started-at="2022-01-21T15:33:18 IST" name="userLogoutAction" finished-at="2022-01-21T15:33:27 IST" duration-ms="9420" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- userLogoutAction -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:bookstore.BookstoreTest@13e344d]" started-at="2022-01-21T15:33:27 IST" name="tearDown" finished-at="2022-01-21T15:33:37 IST" duration-ms="9285" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:bookstore.BookstorePosTest@72e5a8e]" started-at="2022-01-28T13:55:32 IST" name="tearDown" finished-at="2022-01-28T13:55:42 IST" duration-ms="10025" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- bookstore.BookstoreTest -->
+      </class> <!-- bookstore.BookstorePosTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
